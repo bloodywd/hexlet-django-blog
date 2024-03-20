@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Hello, {{ who }}!</h1>
-</body>
-</html>
+<!-- hexlet_django_blog/templates/about.html -->
+
+{% extends "base.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>Hello, {{ who }}!</h1>
+{% endblock %}
